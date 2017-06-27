@@ -19,7 +19,8 @@ for _ in range(5):
     body.send_keys(Keys.PAGE_DOWN)
     time.sleep(0.2)
 
-tweets = browser.find_element_by_class_name('tweet-text')
+tweets = browser.find_elements_by_class_name('tweet-text')
+
 
 for tweet in tweets:
     print(tweet.text)
